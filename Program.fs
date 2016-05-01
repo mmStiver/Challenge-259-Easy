@@ -9,10 +9,10 @@ let calcDistance (input:string) =
                 
 [<EntryPoint>]
 let main argv = 
-    let testData = ["7851"; "219.45.143.143"]        
+    let testData = ["7851"; "219.45.143.143";"123456789.0"]        
 
     for i in testData do
-        printfn "%s -> %A" i (calcDistance i)
+        printfn "%s -> %0.02f" i (calcDistance i)
 
     //List.zip input.Tail
     //    |> printfn "%A "
